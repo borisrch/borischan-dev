@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Boris Chan</title>
+</head>
+
+<body>
+  <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu animated fadeInDown faster">
+      <div class="navbar-end">
+        <a class="navbar-item bc-nav-label">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+          <span class="navbar-text">Home</span>
+        </a>
+
+        <a class="navbar-item bc-nav-label">
+          <span class="icon">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="navbar-text">About</span>
+        </a>
+
+        <a class="navbar-item bc-nav-label">
+          <span class="icon">
+            <i class="fas fa-rocket"></i>
+          </span>
+          <span class="navbar-text">Projects</span>
+        </a>
+
+        <a class="navbar-item bc-nav-label">
+          <span class="icon">
+            <i class="fas fa-book"></i>
+          </span>
+          <span class="navbar-text">Coursework</span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+  <div class="header" id="header">
+    <canvas class="animated fadeIn faster"></canvas>
+    <div class="title-container">
+      <h1 class="">Hi, I'm Boris.</h1>
+      <h2 class="header-subtitle">Software developer, tech enthusiast, caffeine fanatic.</h2>
+      <img src="svg/gesture.svg" class="tap-gesture tap-entrance-anim" alt="tap" height="87px" width="100px" />
+    </div>
+  </div>
+  <main>
+    <section class="about" id="about">
+      <h2 class="main-subtitle">About Me</h2>
+      <div class="container">
+        <div class="columns is-centered is-desktop">
+          <div class="column is-narrow box-debug">
+            <img class="" src="img/coolphoto1.JPG" width="300px" style="border-radius: 4px" alt="Boris">
+          </div>
+          <div class="column box-debug">
+            <div class="about-box-1">
+              <p>I like building awesome software.
+                I've built apps, API's, micro-libraries and games for the web. I've also tinkered with machine learning
+                and data mining techniques to build predictive models.</p>
+              <br>
+              <p>If you are interested, you can view some of my favourite projects in my portfolio down below.</p>
+            </div>
+          </div>
+          <div class="column box-debug">
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="main-subtitle">Projects</h2>
+        <h3>I'm excited to share what projects I'm working on.</h3>
+        <div class="columns is-centered is-tablet">
+          <!-- Project Column 1 -->
+          <div class="column box-debug">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="https://bulma.io/images/placeholders/640x320.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="svg/game-controller.svg" class="" alt="tap" height="" width="" />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Stride RPG</p>
+                    <p class="subtitle is-6">
+                      <a href="#">More details</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="content">
+                  Travel through different realms and defeat mobs to collect their anima. Build your spellbook in this
+                  DnD inspired turn based game.
+                  <div class="stack">
+                    <span class="tag js-colour">
+                      <span class="icon">
+                        <i class="fab fa-lg fa-js"></i>
+                      </span>
+                      <span class="tag-label">
+                        JavaScript
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Column 2 -->
+          <div class="column box-debug">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="https://bulma.io/images/placeholders/640x320.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="svg/idea.svg" class="" alt="tap" height="" width="" />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">SimpleGDPR.js</p>
+                    <p class="subtitle is-6">
+                      <a href="#">More details</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="content">
+                  A lightweight and easy-to-use GDPR consent plugin. Simple API, built-in themes, mobile-ready, and no
+                  dependencies.
+                  <div class="stack">
+                    <span class="tag js-colour">
+                      <span class="icon">
+                        <i class="fab fa-lg fa-js"></i>
+                      </span>
+                      <span class="tag-label">
+                        JavaScript
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Column 3 -->
+          <div class="column box-debug">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="https://bulma.io/images/placeholders/640x320.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="svg/store.svg" class="" alt="tap" height="" width="" />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">BakerStock</p>
+                    <p class="subtitle is-6">
+                      <a href="#">More details</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="content">
+                    An inventory planning app built with Vue.js and Spring Boot designed to provide a easy process of managing inventory.
+                  <div class="stack">
+                    <span class="tag vue-colour">
+                      <span class="icon">
+                        <i class="fab fa-lg fa-vuejs"></i>
+                      </span>
+                      <span class="tag-label">
+                        Vue.js
+                      </span>
+                    </span>
+                    <span class="tag java-colour">
+                        <span class="icon">
+                          <i class="fab fa-lg fa-java"></i>
+                        </span>
+                        <span class="tag-label">
+                          Java
+                        </span>
+                      </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <script>
+    document.addEventListener('touchmove', function (e) {
+      e.preventDefault()
+    })
+    var rad = 0;
+    var first = true;
+    var c = document.getElementsByTagName('canvas')[0],
+      x = c.getContext('2d'),
+      pr = window.devicePixelRatio || 1,
+      w = window.innerWidth,
+      h = window.innerHeight,
+      f = 60,
+      q,
+      m = Math,
+      r = 0,
+      u = Math.PI * 2,
+      v = Math.cos,
+      z = Math.random,
+      pos = 0.01
+    c.width = w * pr
+    c.height = h * pr
+    x.scale(pr, pr)
+    x.globalAlpha = 0.6
+
+    var drawTime = 35;
+    var epsilon = 4;
+
+    function i() {
+      // Draw 2 more arrays
+      x.clearRect(0, 0, w, h)
+      q = [{
+          x: 0,
+          y: h * pos + f
+        },
+        {
+          x: 0,
+          y: h * pos - f
+        }
+      ]
+
+      function draw() {
+        if (q[1].x < w + f) {
+          setTimeout(function () {
+            d(q[0], q[1]);
+            draw();
+          }, drawTime);
+        } else {
+          console.log('draw complete');
+          epsilon = e();
+          // if (first) {
+          //   first = false;
+          //   i();
+          // }
+        }
+      }
+
+      draw();
+
+      // pos += 0.1;
+
+      // while(q[1].x < w+f) {
+      //   d(q[0], q[1])
+      // } 
+    }
+
+    function d(i, j) {
+
+      x.beginPath()
+      x.moveTo(i.x, i.y)
+      // pos 1
+      x.lineTo(j.x, j.y)
+      // draw length
+      // calc x
+      // var k = j.x + (Math.random() * 2 - 0.25) * f
+      // var k = j.x + (Math.sin(rad) ** 2) * f
+      // Epsilon = {4, 5, 2}
+      var k = j.x + ((Math.sin(rad / 2) + Math.cos(rad * epsilon)) ** 2) * f
+
+      // calc y
+      var n = y(j.y)
+      console.log(k);
+      // pos 2
+      x.lineTo(k, n)
+      x.closePath()
+      // Colour wheel -15 degrees
+      r -= u / -12
+      x.fillStyle = '#' + (v(r) * 127 + 128 << 16 | v(r + u / 3) * 127 + 128 << 8 | v(r + u / 3 * 2) * 127 + 128)
+        .toString(
+          16)
+      x.fill()
+
+      // window.requestAnimationFrame(fade);
+      q[0] = q[1]
+      q[1] = {
+        x: k,
+        y: n
+      }
+    }
+
+    function y(p) {
+      // height from cosine graph
+      // p = previous, h/40 sections
+      var r = h / 10;
+      // 8, 16, 5, 4, Pi cool
+      var d = 4;
+      if (w <= 400) {
+        r = 25
+      }
+      var t = (p + h / r) + Math.cos(rad) * f;
+      rad += Math.PI / d;
+
+      // var t = p + Math.cos(rad) * f;
+      // rad += Math.PI / 4;
+      // var t = p + (Math.random() * 2 - 1) * f
+      return (t > h || t < 0) ? y(p) : t
+    }
+
+    function e() {
+      switch (epsilon) {
+        case 2:
+          epsilon = 4;
+          break;
+        case 4:
+          epsilon = 5;
+          break;
+        case 5:
+          epsilon = 2;
+          break;
+      }
+      console.log('epsilon' + epsilon);
+      return epsilon;
+    }
+
+    // function fade() {
+    //   if (x.globalAlpha != 0) {
+    //     setTimeout(function() {
+    //       x.globalAlpha -= 0.01
+    //     }, 100)
+    //   }
+    // }
+
+    function debounce(func) {
+      var timer;
+      return function (event) {
+        if (timer) clearTimeout(timer);
+        timer = setTimeout(func, 500, event);
+      };
+    }
+    const header = document.getElementById('header')
+    header.onclick = i
+    header.ontouchstart = i
+
+    window.addEventListener("resize", debounce(function (e) {
+      i()
+    }));
+    i()
+  </script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

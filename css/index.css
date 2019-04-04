@@ -1,0 +1,165 @@
+html {
+  /* font-family: 'Lato', sans-serif; */
+  /* color: #09151f; */
+  font-smooth: never;
+}
+
+.header {
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title-container {
+  position: absolute;
+  top: 39%;
+  transform: translateX(-50%) translateY(calc(-50% - .5px));
+  left: 50%;
+  z-index: 2;
+}
+
+.tap-gesture {
+  position: absolute;
+  top: -150px;
+  opacity: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5em;
+  color: #0d0d13;
+  font-family: 'Lato';
+}
+
+h2 {
+  
+  font-size: 5em;
+  
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+}
+
+main {
+  margin-top: 95vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.box {
+  width: 300px;
+  height: 400px;
+}
+
+.about {
+  background-color: #eee;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  justify-items: center;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+.box-debug {
+  border: 1px solid blue;
+}
+
+.about-box-1 {
+  border: 1px solid red;
+}
+
+.main-subtitle {
+  font-size: 1.5em;
+  font-family: 'Lato';
+  font-weight: bold;
+  padding: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header-subtitle {
+  font-size: 1.8em;
+  font-family: 'Roboto';
+}
+
+.navbar {
+  background-color: #ffffff00;
+}
+
+a.navbar-item>.icon:not(:last-child) {
+  margin-left: -.25em;
+  margin-right: .25em;
+}
+
+.navbar-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a.navbar-item:hover {
+  color: #03A9F4;
+}
+
+.stack {
+  padding-top: 10px;
+}
+
+.js-colour {
+  background-color: #f7df1e !important;
+}
+
+.node-colour {
+  background-color: #66BB6A !important;
+}
+
+.vue-colour {
+  background-color: #4fc08d !important;
+}
+
+.spring-colour {
+  background-color: #5fb832 !important;
+}
+
+.java-colour {
+  background-color: #FFAB40 !important;
+}
+
+@media screen and (min-width: 1088px) {
+  .navbar-text {
+    display: none;
+  }
+}
+.tap-entrance-anim {
+  animation-name: tap-entrance;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-timing-function: ease;
+}
+
+@keyframes tap-entrance {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  15% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  18% {
+    transform: scale(0.75) perspective(50em) rotateX(45deg) rotateY(-30deg);
+  }
+  25% {
+    transform: scale(1) perspective(0em) rotateX(0deg);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
