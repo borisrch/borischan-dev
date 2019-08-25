@@ -1,22 +1,26 @@
-html {
+html, body {
   /* font-family: 'Lato', sans-serif; */
   /* color: #09151f; */
   font-smooth: never;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .header {
   position: absolute;
   top: 0px;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
+  display: block;
 }
 
 .title-container {
   position: absolute;
-  top: 39%;
+  top: 40vh;
   transform: translateX(-50%) translateY(calc(-50% - .5px));
   left: 50%;
   z-index: 2;
+  min-width: 300px;
 }
 
 .tap-gesture {
@@ -44,8 +48,9 @@ canvas {
 }
 
 main {
-  margin-top: 95vh;
+  margin-top: 80vh;
   font-family: 'Roboto', sans-serif;
+  display: block;
 }
 
 .box {
@@ -53,8 +58,13 @@ main {
   height: 400px;
 }
 
-.about {
+.about, .coursework {
   background-color: #eee;
+  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+}
+
+section {
+  padding-bottom: 40px;
 }
 
 .about-container {
@@ -69,17 +79,31 @@ main {
   border: 1px solid blue;
 }
 
-.about-box-1 {
+.c {
   border: 1px solid red;
 }
 
+.about-box-1 {
+  padding-left: 35px;
+  padding-right: 35px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
 .main-subtitle {
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-family: 'Lato';
   font-weight: bold;
-  padding: 35px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   text-align: center;
   text-transform: uppercase;
+  color: #000;
+}
+
+.main-desc {
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 .header-subtitle {
@@ -121,12 +145,160 @@ a.navbar-item:hover {
   background-color: #4fc08d !important;
 }
 
-.spring-colour {
+.python-colour {
   background-color: #5fb832 !important;
 }
 
 .java-colour {
-  background-color: #FFAB40 !important;
+  background-color: #F57C00 !important;
+}
+
+.ml-colour {
+  background-color: #3D5AFE !important;
+}
+
+.ir-colour {
+  background-color: #be23da !important;
+}
+
+.spring-colour {
+  background-color: #8BC34A !important;
+}
+
+.tag {
+  color: #fff !important;
+}
+
+.coursework {
+  /* clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%); */
+  padding-bottom: 5em;
+}
+
+.card {
+  box-shadow: 0 11px 13px 0 rgba(0,0,0,0.09);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.profile {
+  border: 7px solid #3ca9f5;
+  max-width: 256px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+}
+
+.header-menu {
+  font-size: 1.25em;
+  padding: 10px 15px 10px 15px;
+  border: 2px solid #4a4a4a;
+  font-weight: 700;
+  margin-right: 10px;
+  background: #fff;
+  transition: all ease-in-out 0.2s;
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+a {
+  
+}
+
+.location {
+  /* color: #3ca9f5;
+  border-bottom: 2px solid #3ca9f5; */
+}
+
+.header-menu:hover {
+  border: 2px solid #3ca9f5;
+  color: #3ca9f5;
+  text-decoration: underline #3ca9f5;
+  cursor: pointer;
+}
+
+.header-menu-group {
+  margin-top: 50px;
+}
+
+.project-snapshot {
+  box-shadow: 0 11px 13px 0 rgba(0, 60, 255, 0.09);
+  border-radius: 4px;
+  overflow: hidden;
+  user-drag: none;
+}
+
+.project-info {
+  margin-top: 25px;
+}
+
+.project-title {
+  font-family: 'Lato';
+  color: #000;
+  font-size: 1.75em;
+}
+
+.project-title:hover {
+  color: #3ca9f5;
+  text-decoration: underline #3ca9f5;
+}
+
+.project-link:hover {
+  color: #3ca9f5;
+}
+
+.footer {
+  background-color: #151f24;
+}
+
+.footer-button {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 100%;
+  margin: 0 1rem;
+  height: 47px;
+  width: 47px;
+  border: 2px solid rgba(255,255,255,0.3);
+  transition: ease-in all 0.2s;
+}
+
+.footer-button:hover {
+  border: 2px solid #fff;
+  color: #263238;
+  background-color: #fff;
+  transform: scale(1.25);
+}
+
+.footer-text {
+  font-size: 1em;
+  font-family: 'Lato';
+  font-weight: bold;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.3);
+}
+
+.input-container {
+  border-radius: 20px;
+  padding: 0.25em;
+  background-color: #eee;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
 @media screen and (min-width: 1088px) {
