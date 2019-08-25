@@ -325,27 +325,33 @@
       </div>
     </section>
 
-    <!-- <section class="contact">
+    <section class="contact">
       <div class="container">
-          <h2 class="main-subtitle">Contact Me</h2>
-        <form action="" method="POST">
-          <label>
-            <div class="input-container c">
-                <span class="icon is-small">
-                    <i class="fas fa-envelope"></i>
-                </span>
-                <input type="text input" name="_replyto" id="email">
-            </div>
-            
-          </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
-          <button type="submit">Send</button>
-        </form>
+        <h2 class="main-subtitle">Contact Me</h2>
+        <div class="columns is-centered">
+          <div class="column is-half is-10-mobile is-offset-1-mobile">
+              <form action="" method="POST">
+                  <label class="label">
+                      Email
+                    </label>
+                    <div class="input-container field-active" id="email-container">
+                        <span class="icon is-small" style="margin-right: 10px; position: relative;">
+                          <i class="fas fa-envelope icon-email"></i>
+                        </span>
+                        <input type="text input" name="_replyto" id="email" placeholder="">
+                    </div>
+                  <label class="label">
+                    Your message
+                  </label>
+                  <textarea name="message"></textarea>
+                  <div class="has-text-centered">
+                      <span class="header-menu form-button" id="form-submit" style="border-radius: 25px;">Submit</span>
+                  </div>
+                </form>
+          </div>
+        </div>
       </div>
-    </section> -->
+    </section>
 
   </main>
 
