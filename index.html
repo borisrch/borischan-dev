@@ -403,17 +403,14 @@
     x.scale(pr, pr)
     x.globalAlpha = 0.6
 
-
-    if (w <= 375) {
-      f = 28;
-    } else if (w <= 414) {
-      f = 30;
-    }
-
-
-
     var drawTime = 35;
     var epsilon = 5;
+
+    if (w <= 375) {
+      f = 55;
+    } else if (w <= 414) {
+      f = 40;
+    }
 
     function i() {
 
