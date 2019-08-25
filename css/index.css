@@ -25,7 +25,7 @@ html, body {
 
 .tap-gesture {
   position: absolute;
-  top: -150px;
+  top: -15vh;
   opacity: 0;
 }
 
@@ -282,9 +282,10 @@ a {
 }
 
 .input-container {
-  border-radius: 20px;
+  border-radius: 4px;
   padding: 0.25em;
   background-color: #eee;
+  border: 2px solid #eee;
 }
 
 input {
@@ -292,6 +293,43 @@ input {
   border: none;
   -webkit-appearance: none;
   box-shadow: none !important;
+}
+
+textarea {
+  display: block;
+  background-color: #eee;
+  border: 2px solid #eee;
+  width: 100%;
+  resize: none;
+  padding: 7px;
+  height: 8em;
+  border-radius: 4px;
+  margin-bottom: 2.5em;
+}
+
+.label {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.icon-email {
+  position: absolute;
+  top: 2px;
+  left: 7px;
+}
+
+.field-active {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.shadow {
+  box-shadow: 0 11px 13px 0 rgba(0,0,0,0.09);
+}
+
+.form-button:hover {
+  background-color: #3ca9f5;
+  color: #fff;
 }
 
 input:focus,
