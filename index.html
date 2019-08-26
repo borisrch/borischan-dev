@@ -65,7 +65,7 @@
     <canvas class="animated fadeIn faster"></canvas>
     <div class="title-container">
       <h1 class="is-size-1">Hi, I'm Boris.</h1>
-      <h2 class="header-subtitle is-size-3 is-size-5-mobile">Software developer, tech enthusiast, caffeine fanatic.</h2>
+      <h2 class="header-subtitle is-size-3 is-size-5-mobile">Web developer, tech enthusiast, caffeine fanatic.</h2>
       <img src="svg/gesture.svg" class="tap-gesture tap-entrance-anim" alt="tap" height="87px" width="100px" />
       <div class="header-menu-group">
         <span class="header-menu">Writings</span>
@@ -329,10 +329,10 @@
         <h2 class="main-subtitle">Contact Me</h2>
         <div class="columns is-centered">
           <div class="column is-half">
-            <img src="img/contact.png" alt="Contact me" srcset="">
+            <img src="img/contact.png" alt="Contact me" srcset="" style="user-select: none; pointer-events: none;">
           </div>
           <div class="column is-half is-10-mobile is-offset-1-mobile">
-              <form action="" method="POST">
+              <!-- <form action="" method="POST">
                   <label class="label">
                       Email
                     </label>
@@ -352,7 +352,14 @@
                           <i class="fas fa-check" style="margin-right: 10px;"></i><strong>Message successfully sent.</strong>
                       </div>
                   </div>
-                </form>
+                </form> -->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                <script>
+                  hbspt.forms.create({
+	                  portalId: "6325830",
+	                  formId: "408cd292-49f1-4107-8d49-c75c7e24f9e3"
+                  });
+                </script>
           </div>
         </div>
       </div>
@@ -375,10 +382,12 @@
           <i class="fab fa-linkedin-in"></i>
         </span>
       </a>
-      <a href="" class="button is-medium footer-button">
-        <span class="icon is-small">
-          <i class="fas fa-envelope"></i>
-        </span>
+      <a href="mailto:boris.github@gmail.com?Subject=Hello%20" class="button is-medium footer-button">
+
+            <span class="icon is-small">
+                <i class="fas fa-envelope"></i>
+              </span>
+
       </a>
       <p></p>
       <p class="footer-text">
@@ -558,7 +567,7 @@
       max: 5,
     });
   </script>
-  <script src="js/index.js"></script>
+  <!-- <script src="js/index.js"></script> -->
 </body>
 
 </html>
