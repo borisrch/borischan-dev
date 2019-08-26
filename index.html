@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
   <link rel="stylesheet" href="css/bulma.min.css">
@@ -108,11 +109,9 @@
         <div class="columns">
 
           <div class="column is-half is-10-mobile is-offset-1-mobile">
-            <a href="https://github.com/borisrch/ecommerce#full-stack-e-commerce-project" target="_blank">
               <figure class="image project-snapshot" draggable="false" id="">
                 <img src="./img/ecommerce-01.png">
               </figure>
-            </a>
             <p class="project-info">
               <a href="https://github.com/borisrch/ecommerce#full-stack-e-commerce-project" class="project-link"
                 target="_blank">
@@ -329,12 +328,15 @@
       <div class="container">
         <h2 class="main-subtitle">Contact Me</h2>
         <div class="columns is-centered">
+          <div class="column is-half">
+            <img src="img/contact.png" alt="Contact me" srcset="">
+          </div>
           <div class="column is-half is-10-mobile is-offset-1-mobile">
               <form action="" method="POST">
                   <label class="label">
                       Email
                     </label>
-                    <div class="input-container field-active" id="email-container">
+                    <div class="input-container" id="email-container">
                         <span class="icon is-small" style="margin-right: 10px; position: relative;">
                           <i class="fas fa-envelope icon-email"></i>
                         </span>
@@ -343,9 +345,12 @@
                   <label class="label">
                     Your message
                   </label>
-                  <textarea name="message"></textarea>
+                  <textarea name="message" id="message"></textarea>
                   <div class="has-text-centered">
                       <span class="header-menu form-button" id="form-submit" style="border-radius: 25px;">Submit</span>
+                      <div class="notification is-success" style="display: none" id="success">
+                          <i class="fas fa-check" style="margin-right: 10px;"></i><strong>Message successfully sent.</strong>
+                      </div>
                   </div>
                 </form>
           </div>
