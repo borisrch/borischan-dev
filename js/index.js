@@ -1,25 +1,53 @@
-document.addEventListener('DOMContentLoaded', () => {
+const emailField = document.getElementById('email');
+const emailContainer = document.getElementById('email-container');
+const textArea = document.getElementById('message');
+const submit = document.getElementById('form-submit');
+const success = document.getElementById('success');
 
-  // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+emailField.onfocus = (e) => {
+  emailContainer.classList.add('field-active');
+}
 
-  // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
+emailField.addEventListener('focusout', (e) => {
+  emailContainer.classList.remove('field-active');
+});
 
-    // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
-      el.addEventListener('click', () => {
+textArea.onfocus = (e) => {
+  textArea.classList.add('field-active');
+}
 
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
+textArea.addEventListener('focusout', (e) => {
+  textArea.classList.remove('field-active');
+});
 
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
+const validateForm = (e) => {
 
-      });
-    });
+  const emailConstraints = {
+    from: {
+      email: true
+    }
+  };
+
+  if (validate({from: emailField.value}, emailConstraints) !== undefined) {
+    return alert('Please enter a valid email.');
   }
 
-});
+  const messageConstraints = {
+    length: {
+      minimum: 20,
+    }
+  }
+
+  if (textArea.value.length < 20) {
+    return alert('Message too short.');
+  }
+
+  textArea.disabled = true;
+  emailField.disabled = true;
+
+  submit.removeEventListener('click', this);
+  submit.parentElement.removeChild(submit);
+  success.style.display = 'block';
+}
+
+submit.onclick = validateForm;
