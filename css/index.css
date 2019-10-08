@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   /* font-family: 'Lato', sans-serif; */
   /* color: #09151f; */
   font-smooth: never;
@@ -37,9 +38,9 @@ h1 {
 }
 
 h2 {
-  
+
   font-size: 5em;
-  
+
 }
 
 canvas {
@@ -58,7 +59,8 @@ main {
   height: 400px;
 }
 
-.about, .coursework {
+.about,
+.coursework {
   background-color: #eee;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
@@ -175,7 +177,7 @@ a.navbar-item:hover {
 }
 
 .card {
-  box-shadow: 0 11px 13px 0 rgba(0,0,0,0.09);
+  box-shadow: 0 11px 13px 0 rgba(0, 0, 0, 0.09);
   border-radius: 0.25rem;
   overflow: hidden;
 }
@@ -201,9 +203,7 @@ a.navbar-item:hover {
   color: #4a4a4a;
 }
 
-a {
-  
-}
+a {}
 
 .location {
   /* color: #3ca9f5;
@@ -211,9 +211,9 @@ a {
 }
 
 .header-menu:hover {
-  border: 2px solid #3ca9f5;
-  color: #3ca9f5;
-  text-decoration: underline #3ca9f5;
+  border: 2px solid #1387da;
+  color: #1387da;
+  text-decoration: underline #1387da;
   cursor: pointer;
 }
 
@@ -258,7 +258,7 @@ a {
   margin: 0 1rem;
   height: 47px;
   width: 47px;
-  border: 2px solid rgba(255,255,255,0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   transition: ease-in all 0.2s;
 }
 
@@ -278,7 +278,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .input-container {
@@ -321,11 +321,11 @@ textarea {
 
 .field-active {
   border-color: #80bdff;
-  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
 }
 
 .shadow {
-  box-shadow: 0 11px 13px 0 rgba(0,0,0,0.09);
+  box-shadow: 0 11px 13px 0 rgba(0, 0, 0, 0.09);
 }
 
 .form-button:hover {
@@ -337,7 +337,7 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 @media screen and (min-width: 1088px) {
@@ -345,6 +345,7 @@ button:focus {
     display: none;
   }
 }
+
 .tap-entrance-anim {
   animation-name: tap-entrance;
   animation-duration: 6s;
@@ -357,19 +358,24 @@ button:focus {
     opacity: 0;
     transform: translateY(25px);
   }
+
   15% {
     opacity: 1;
     transform: scale(1) translateY(0);
   }
+
   18% {
     transform: scale(0.75) perspective(50em) rotateX(45deg) rotateY(-30deg);
   }
+
   25% {
     transform: scale(1) perspective(0em) rotateX(0deg);
   }
+
   90% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
